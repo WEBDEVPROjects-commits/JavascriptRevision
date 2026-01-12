@@ -1,13 +1,11 @@
-var item={
-    "a":"Monday",
-    "b":"Tuesday"
-};
-let a=null;
-let b="Hello";
-let c =13;
-let d=13.5;
-let e=undefined;
-let f=null;
-
-console.log(item,typeof a,typeof b ,typeof c,typeof d,typeof e,typeof f);
-item.salary="$1000";
+//  making a 5 word dictionary using a button.
+var dictionary={
+    Happy:"Feeling Pleasure",
+    Big:"Large in size",
+    Run:"Move quickly on foot",
+    Good:"Satisfactory",
+    See:"To notice with your eyes"
+}
+for(let key in dictionary){
+    console.log(dictionary[key]);
+}
