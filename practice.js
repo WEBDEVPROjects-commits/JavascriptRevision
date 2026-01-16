@@ -1,9 +1,12 @@
-// document.querySelector(".box").onclick=(e)=>{
-//         alert("hey the button 1 has been clicked!")
+var x=5;
+var Interval=setInterval(()=>{
+    document.querySelector(".Stopwatch").innerHTML=x; 
+    x=x-1;
+},1000);
+setTimeout(()=>{
+    clearInterval(Interval);
 
-// }
-document.querySelector("#Bookmark").addEventListener('click',(e)=>{
-    document.querySelector(".SavedBkmrk").insertAdjacentHTML('beforeend',`<a href=" ${document.querySelector("#enter").value}"class="SavedBkmrk1" target="_blank">${document.querySelector("#enter").value}</a>`)
-    // =document.querySelector("#enter").value
-
-})
+},6000)
+setTimeout(()=>{
+    alert("time's Up")
+},8000)

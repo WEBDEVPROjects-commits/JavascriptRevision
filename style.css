@@ -1,22 +1,19 @@
+
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    gap: 8px;
 }
-#enter{
-    height: 4vh;
-    width: 20vw;
-    text-indent: 4px;
-}
-#Bookmark {
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 2px 11px;
-    background-color: red;
-}
-#SavedBkmrk1{
-    background-color: red;
+
+.Stopwatch {
+    display: flex;
+    align-items: center;
+    background: RED;
+    border-radius: 33px;
+    padding: 8px;
+    height: 46px;
+    width: 46px;
+    justify-content: center;
+    color: white;
+    text-shadow: 0px 0px 5px #000000;
 }
