@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 8px;
+}
+#enter{
+    height: 4vh;
+    width: 20vw;
+    text-indent: 4px;
+}
+#Bookmark {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px 11px;
+    background-color: red;
+}
+#SavedBkmrk1{
+    background-color: red;
+}
