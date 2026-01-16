@@ -1,12 +1,11 @@
-var x=5;
-var Interval=setInterval(()=>{
-    document.querySelector(".Stopwatch").innerHTML=x; 
-    x=x-1;
-},1000);
-setTimeout(()=>{
-    clearInterval(Interval);
-
-},6000)
-setTimeout(()=>{
-    alert("time's Up")
-},8000)
+        document.querySelector(".Child").addEventListener("click", (e) => {
+            e.stopPropagation();
+            alert("Child was clicked")
+        })
+        document.querySelector(".Childcontainer").addEventListener("click", (e) => {
+            alert("Childcontainer was clicked")
+        })
+        document.querySelector(".Childcontainer").addEventListener("click", (e) => {
+            console.log(e.target);
+            alert("container was clicked")
+        })
