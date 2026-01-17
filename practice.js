@@ -9,7 +9,8 @@ async function getdata(){
 
 }
 async function main(){
-    var data=await getdata();
-    console.log(data);
+    let api =await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    let data= await api.json();
+    console.log(data)
 }
 main()
