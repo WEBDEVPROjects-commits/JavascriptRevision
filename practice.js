@@ -1,20 +1,19 @@
-var traverse = Array.from(document.querySelector(".Content").children)
-function dots() {
-    traverse.forEach((element) => {
-        setInterval(() => {
-            if (element.innerHTML.endsWith("...")) {
-                element.innerHTML = element.innerHTML.slice(0, (element.innerHTML.length - 3));
-            }
-            else {
-                element.innerHTML = element.innerHTML + "."
-            }
-        }, 1000);
-    })
-}
-dots()
-traverse.forEach(element => {
+let c="10";
+let a=prompt("Please enter your first number");
+let b=prompt("Please enter your second number");
 
-    setTimeout(() => {
-        element.removeAttribute("hidden");
-    }, (Math.floor((Math.random() * (8 - 3 + 1) + 3))) * 1000)
-});
+
+if(isNaN(a)||isNaN(b)){
+    throw SyntaxError("This is not allowed");
+}
+let sum=parseInt(a)+parseInt(b)
+
+try{
+    console.log("The sum is "+(10/0));
+}
+catch(error){
+    console.log("error hai ");
+}
+finally{
+    console.log("Finally to chalta hi hai")
+}
