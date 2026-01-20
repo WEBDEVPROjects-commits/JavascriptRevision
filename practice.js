@@ -1,33 +1,14 @@
-class Animal{
-    static a=10;
-    constructor (){
-        console.log("This is animal constructor")
-        console.log(this);
-    }
-    hide(){
-        console.log("animal hides")
-    }
-    run(){
-        console.log("animal can run")
-    }
+(function x(){
+console.log("hello");
+})()//IIFE
 
-}
-class rabbit extends Animal{
-    // constructor(){
-    //     console.log("this is rabbit constructor")
-    // }
-    run(){
-        super.run();
-        console.log("rabbit can run")
-        console.log(this.hide())
-    }
+let [x,y,...rest]=[1,2,7,4,6,7,7,8,8,8,3];
+console.log(rest);
 
-}
-let anm1=new Animal;
-let rb1=new rabbit;
-console.log(anm1.run())
-console.log(rb1.run())
-console.log(Animal.a)
-// console.log(Animal.run())
-console.log()
-console.log(rb1 instanceof rabbit)
+let {a,b,c}={a:"Hello",b:"Hi",c:"Why"}
+console.log(a,b,c) 
+
+const arr=[1,2,4]
+console.log(arr[0],arr[1],arr[2]);
+console.log(...arr);
+const obj={...arr};
