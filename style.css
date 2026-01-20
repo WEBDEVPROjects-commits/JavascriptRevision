@@ -1,19 +1,10 @@
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+*{
+    padding: 0;margin: 0;
 }
-
-.Stopwatch {
-    display: flex;
-    align-items: center;
-    background: RED;
-    border-radius: 33px;
-    padding: 8px;
-    height: 46px;
-    width: 46px;
-    justify-content: center;
-    color: white;
-    text-shadow: 0px 0px 5px #000000;
+.container{
+   background:green;
+   height: 100vh;
+}
+.Instructions{
+    
 }
